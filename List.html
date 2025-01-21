@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project Management Tool</title>
-  <link rel="stylesheet" href="dist/frappe-gantt.css">
+  <link rel="stylesheet" href="dist/frappe-datatable.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <nav>
@@ -16,16 +16,18 @@
 </nav>
 <body>
     <div class = "body-wrapper">
-        <h1>Gantt Chart</h1>
+        <h1>List</h1>
         <div id="task-form">
             <input type="text" id="task-name" placeholder="Task Name" required>
             <input type="date" id="task-start" required>
             <input type="date" id="task-end" required>
             <button id="add-task">Add Task</button>
           </div>
-          <div id="gantt"></div>
-          <script src="dist/frappe-gantt.umd.js"></script>
-          <script src="script.js"></script>
+
+          <div id="data-table"></div>
+          <script src="dist/Sortable.min.js"></script>
+          <script src="dist/frappe-datatable.min.js"></script>
+          <script src="Datatable-script.js"></script>
     </div>
 
 </body>
